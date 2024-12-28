@@ -35,7 +35,7 @@ export const paymentVerification = async (req, res) => {
     });
 
     res.redirect(
-      `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+      `https://razorpay-client-hazel.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`
     );
   } else {
     res.status(400).json({

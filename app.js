@@ -8,7 +8,10 @@ export const app = express();
 
 // Add this configuration to allow specific origins
 const corsOptions = {
-  origin: ["http://localhost:3000"], // Add your frontend's URL
+  origin: [
+    "http://localhost:3000",
+    "https://razorpay-client-hazel.vercel.app/",
+  ], // Add your frontend's URL
   methods: ["GET", "POST"], // Allow specific methods
   allowedHeaders: ["Content-Type"], // Allow specific headers
 };
